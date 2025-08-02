@@ -6,8 +6,9 @@ import joblib
 st.title("📰 Fake News Detector")
 
 # Load model and vectorizer
-model = joblib.load('fake_news_model.pkl')
-vectorizer = joblib.load('tfidf_vectorizer.pkl')
+model = joblib.load('dashboard/fake_news_model.pkl')
+vectorizer = joblib.load('dashboard/tfidf_vectorizer.pkl')
+
 
 # Text input
 news_text = st.text_area("Enter News Article Text:")
